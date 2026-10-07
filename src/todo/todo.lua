@@ -259,9 +259,6 @@ function todo.on_show_maximize_button_changed(player)
         end
     else
         todo.log("Hiding minimized button.")
-        local max_button = todo.get_maximize_button(player)
-        if max_button then
-            max_button.destroy()
-        end
+        todo.destroy_maximize_button(player)
     end
 end

@@ -13,6 +13,7 @@ local toggle_ui_shortcut = {
     toggleable = true,
     order = 'a[alt-mode]-b[copy]',
     action = 'lua',
+    associated_control_input = 'todolist-toggle-ui',
     localised_name = {'todo.shortcut_toggle_ui'},
     icon = '__Todo-List__/graphics/toggle-ui.png',
     small_icon = '__Todo-List__/graphics/' .. 'toggle-ui.png',

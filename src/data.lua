@@ -22,19 +22,6 @@ local toggle_ui_shortcut = {
     small_icon_size = 32
 }
 
-local add_task_shortcut = {
-    type = 'shortcut',
-    name = 'todo-add-task-shortcut',
-    order = 'a[alt-mode]-b[copy]',
-    action = 'lua',
-    localised_name = {'todo.shortcut_add_task'},
-    icon = '__Todo-List__/graphics/todo-add-task-shortcut.png',
-    small_icon = '__Todo-List__/graphics/todo-add-task-shortcut.png',
-    disabled_small_icon = '__Todo-List__/graphics/todo-add-task-shortcut-disabled.png',
-    icon_size = 32,
-    small_icon_size = 32
-}
-
 local search_shortcut = {
     type = "custom-input",
     name = "todo-search-shortcut",
@@ -65,5 +52,5 @@ for _, name in ipairs(sprite_names) do
     })
 end
 
-data:extend({hotkey, toggle_ui_shortcut, add_task_shortcut, search_shortcut})
+data:extend({hotkey, toggle_ui_shortcut, search_shortcut})
 data:extend(sprites)

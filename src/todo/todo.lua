@@ -229,8 +229,6 @@ function todo.on_lua_shortcut(event)
 
     if (event.prototype_name == "todo-toggle-ui-shortcut") then
         todo.toggle_main_frame(player)
-    elseif (event.prototype_name == "todo-add-task-shortcut") then
-        todo.create_add_task_dialog(player)
     end
 end
 
